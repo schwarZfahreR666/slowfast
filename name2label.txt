@@ -1,0 +1,174 @@
+ Pulling two ends of something but nothing happens: 134
+ Throwing something onto a surface: 47
+ Pretending or trying and failing to twist something: 167
+ Putting something in front of something: 126
+ Pretending to put something into something: 1
+ Pretending to sprinkle air onto something: 133
+ Moving something up: 26
+ Dropping something into something: 105
+ Moving part of something: 123
+ Rolling something on a flat surface: 60
+ Poking a hole into something soft: 166
+ Throwing something: 11
+ Taking one of many similar things on the table: 104
+ Putting something onto something: 90
+ Scooping something up with something: 55
+ Showing something behind something: 66
+ Plugging something into something but pulling it right out as you remove your hand: 10
+ Poking a hole into some substance: 173
+ Bending something until it breaks: 155
+ Tilting something with something on it until it falls off: 67
+ Dropping something next to something: 21
+ Lifting something up completely without letting it drop down: 28
+ Pretending to put something next to something: 121
+ Folding something: 117
+ Spinning something so it continues spinning: 138
+ Squeezing something: 69
+ Showing that something is inside something: 71
+ Turning the camera left while filming something: 53
+ Pushing something off of something: 143
+ Pretending to put something behind something: 158
+ Pushing something onto something: 100
+ Pretending to put something on a surface: 110
+ Pouring something out of something: 153
+ Something being deflected from something: 163
+ Pretending to pick something up: 76
+ Putting something that can't roll onto a slanted surface, so it slides down: 73
+ Pretending to put something underneath something: 48
+ Poking something so that it falls over: 119
+ Turning the camera downwards while filming something: 115
+ Putting something underneath something: 87
+ Showing something on top of something: 85
+ Pushing something so that it slightly moves: 5
+ Letting something roll down a slanted surface: 2
+ Pushing something so that it almost falls off but doesn't: 18
+ Letting something roll along a flat surface: 151
+ Tilting something with something on it slightly so it doesn't fall down: 116
+ Bending something so that it deforms: 40
+ Poking something so it slightly moves: 81
+ Tearing something just a little bit: 103
+ Pretending or failing to wipe something off of something: 149
+ Tearing something into two pieces: 93
+ Holding something next to something: 42
+ Moving something and something away from each other: 97
+ Moving something across a surface without it falling down: 107
+ Putting something on a surface: 84
+ Turning something upside down: 36
+ Holding something: 30
+ Wiping something off of something: 129
+ Showing a photo of something to the camera: 59
+ Pretending to spread air onto something: 135
+ Unfolding something: 88
+ Something colliding with something and both come to a halt: 130
+ Putting something on the edge of something so it is not supported and falls down: 72
+ Poking a stack of something so the stack collapses: 140
+ Putting something onto a slanted surface but it doesn't glide down: 139
+ Pushing something so that it falls off the table: 44
+ Spilling something onto something: 141
+ Touching (without moving) part of something: 29
+ Pretending to poke something: 124
+ Pouring something into something until it overflows: 152
+ Turning the camera right while filming something: 128
+ Lifting a surface with something on it but not enough for it to slide down: 144
+ Putting something on a flat surface without letting it roll: 27
+ Putting number of something onto something: 54
+ Removing something, revealing something behind: 46
+ Poking something so lightly that it doesn't or almost doesn't move: 146
+ Pretending to pour something out of something, but something is empty: 142
+ Throwing something against something: 82
+ Something falling like a rock: 49
+ Moving something across a surface until it falls down: 94
+ Throwing something in the air and letting it fall: 161
+ Dropping something behind something: 52
+ Pushing something from left to right: 12
+ Pretending to take something out of something: 147
+ Pulling something from right to left: 41
+ Putting something upright on the table: 131
+ Holding something in front of something: 125
+ Trying to bend something unbendable so nothing happens: 77
+ Moving something and something so they collide with each other: 96
+ Pretending to turn something upside down: 38
+ Tipping something over: 39
+ Moving something away from the camera: 120
+ Pulling two ends of something so that it gets stretched: 160
+ Moving something towards the camera: 99
+ Holding something over something: 98
+ Pretending to scoop something up with something: 31
+ Moving something and something closer to each other: 127
+ Failing to put something into something because something does not fit: 50
+ Moving away from something with your camera: 19
+ Putting something similar to other things that are already on the table: 32
+ Stuffing something into something: 95
+ Piling something up: 154
+ Pushing something from right to left: 65
+ Turning the camera upwards while filming something: 114
+ Showing that something is empty: 20
+ Spinning something that quickly stops spinning: 145
+ Tipping something with something in it over, so something in it falls out: 108
+ Spilling something behind something: 169
+ Lifting up one end of something, then letting it drop down: 89
+ Pretending to throw something: 70
+ Putting something into something: 80
+ Putting something next to something: 14
+ Hitting something with something: 148
+ Showing something next to something: 4
+ Trying to pour something into something, but missing so it spills next to it: 64
+ Twisting something: 86
+ Pulling something from behind of something: 25
+ Pulling something out of something: 150
+ Pretending to squeeze something: 45
+ Pulling something from left to right: 68
+ Dropping something in front of something: 58
+ Spreading something onto something: 63
+ Pushing something with something: 122
+ Picking something up: 22
+ Taking something out of something: 101
+ Poking something so that it spins around: 136
+ Digging something out of something: 34
+ Something colliding with something and both are being deflected: 37
+ Pulling something onto something: 83
+ Moving something and something so they pass each other: 7
+ Opening something: 16
+ Putting something, something and something on the table: 113
+ Pretending to close something without actually closing it: 15
+ Lifting a surface with something on it until it starts sliding down: 111
+ Pretending to be tearing something that is not tearable: 164
+ Spilling something next to something: 62
+ Throwing something in the air and catching it: 8
+ Pulling two ends of something so that it separates into two pieces: 159
+ Covering something with something: 168
+ Putting something onto something else that cannot support it so it falls down: 137
+ Taking something from somewhere: 43
+ Lifting something up completely, then letting it drop down: 75
+ Holding something behind something: 9
+ Pushing something so it spins: 157
+ Moving something down: 92
+ Putting something that cannot actually stand upright upright on the table, so it falls on its side: 132
+ Putting something that can't roll onto a slanted surface, so it stays where it is: 79
+ Moving something closer to something: 156
+ Pretending to open something without actually opening it: 91
+ Approaching something with your camera: 6
+ Letting something roll up a slanted surface, so it rolls back down: 23
+ Pouring something into something: 106
+ Trying but failing to attach something to something because it doesn't stick: 170
+ Laying something on the table on its side, not upright: 118
+ Showing something to the camera: 112
+ Plugging something into something: 33
+ Dropping something onto something: 57
+ Uncovering something: 61
+ Sprinkling something onto something: 165
+ Pretending to take something from somewhere: 162
+ Lifting something with something on it: 3
+ Pouring something onto something: 56
+ Something falling like a feather or paper: 0
+ Moving something away from something: 51
+ Pretending to put something onto something: 78
+ Putting something and something on the table: 35
+ Closing something: 102
+ Attaching something to something: 13
+ Poking a stack of something without the stack collapsing: 171
+ Stacking number of something: 17
+ Lifting up one end of something without letting it drop down: 24
+ Burying something in something: 74
+ Twisting (wringing) something wet until water comes out: 172
+ Putting something behind something: 109
