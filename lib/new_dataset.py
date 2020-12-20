@@ -81,15 +81,14 @@ class Image_Dataset(Dataset):
         buffer = self.to_numpy(buffer)
 
         buffer = self.random_erasing(buffer)
-        print('len', len(imgs))
-        print('orgin',buffer.shape)
+
         
         # if self.action == 'train':
         #     buffer = self.randomflip(buffer) # 训练时随机翻转
         buffer = self.crop(buffer, self.clip_len, self.crop_size) # 随机选择开始位置和图像中位置
         # buffer = self.normalize(buffer) # 归一化
         buffer = self.to_tensor(buffer) # [D,H,W,C] -> [C,D,H,W]符合 Pytorch格式
-        print('final',buffer.shape)
+
         label=self.label_list[index]
 
         return buffer,label
