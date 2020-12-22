@@ -6,7 +6,7 @@ from config import params
 from torch import nn, optim
 from torch.utils.data import DataLoader
 import torch.backends.cudnn as cudnn
-from lib.dataset import Test_Dataset
+from lib.new_dataset import Test_Dataset
 from lib import slowfastnet
 from tensorboardX import SummaryWriter
 from fvcore.common.file_io import PathManager

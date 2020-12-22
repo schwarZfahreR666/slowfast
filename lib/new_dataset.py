@@ -156,7 +156,7 @@ class Image_Dataset(Dataset):
         r_1 = 0.3
         r_2 = 1 / 0.3
         v_l = 0
-        v_h = 255
+        v_h = 1
         pixel_level = False
         if input_img.ndim == 3:
             img_h, img_w, img_c = input_img.shape
@@ -218,10 +218,10 @@ class Test_Dataset(Dataset):
         with open(train_path, 'r') as f:
             datas = f.readlines()
             for data in datas:
-                num = data.replace('\n', '')
-                # num = data.split(':')[0]
-                # label = data.split(':')[1].replace('\n', '')
-                # label = label.replace(' ', '')
+                # num = data.replace('\n', '')
+                num = data.split(':')[0]
+                label = data.split(':')[1].replace('\n', '')
+                label = label.replace(' ', '')
                 path = root_dir + '/' + num
                 file_s.append(path)
                 # label_s.append(label)
@@ -335,6 +335,7 @@ if __name__ == '__main__':
         DataLoader(
             Image_Dataset('../train_num2label.txt', action='train', clip_len=params['clip_len'],
                           frame_sample_rate=params['frame_sample_rate']),
-            batch_size=1, shuffle=True, num_workers=1)
+            batch_size=16, shuffle=True, num_workers=1)
     for data,label in train_dataloader:
-        pass
+        print(data.shape)
+        print(label.shape)
