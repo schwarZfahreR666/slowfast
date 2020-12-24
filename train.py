@@ -141,6 +141,7 @@ def validation(model, val_dataloader, epoch, criterion, optimizer, writer):
     writer.add_scalar('val_loss_epoch', losses.avg, epoch)
     writer.add_scalar('val_top1_acc_epoch', top1.avg, epoch)
     writer.add_scalar('val_top5_acc_epoch', top5.avg, epoch)
+    return top1.avg
 
 def c2_normal_to_sub_bn(key, model_keys):
     """
@@ -162,6 +163,8 @@ def c2_normal_to_sub_bn(key, model_keys):
         return key
 
 def main():
+    best_val_acc = 0
+    epoch_acc = -1
     cudnn.benchmark = False
     cur_time = time.strftime('%Y-%m-%d-%H-%M-%S', time.localtime(time.time()))
     logdir = os.path.join(params['log'], cur_time)
@@ -304,12 +307,13 @@ def main():
     for epoch in range(params['epoch_num']):
         train_loss = train(model, train_dataloader, epoch, criterion, optimizer, writer)
         if epoch % 2== 0:
-            validation(model, val_dataloader, epoch, criterion, optimizer, writer)
+            epoch_acc = validation(model, val_dataloader, epoch, criterion, optimizer, writer)
         # scheduler.step(train_loss)
         scheduler.step()
-        if epoch % 1 == 0:
+        if epoch_acc > best_val_acc:
+            best_val_acc = epoch_acc
             checkpoint = os.path.join(model_save_dir,
-                                      "clip_len_" + str(params['clip_len']) + "frame_sample_rate_" +str(params['frame_sample_rate'])+ "_checkpoint_" + str(epoch) + ".pth.tar")
+                                       "acc_" + str(best_val_acc) + "_checkpoint_" + str(epoch) + ".pth.tar")
             torch.save(model.module.state_dict(), checkpoint)
 
     writer.close

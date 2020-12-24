@@ -10,18 +10,18 @@ import math
 import random
 from torch.utils.data import DataLoader
 
-def input_transform(crop_size, upscale_factor):
+def input_transform(crop_size):
     return transforms.Compose([
 
-        transforms.CenterCrop(crop_size),
-        transforms.Resize(upscale_factor),
+        # transforms.CenterCrop(crop_size),
+        transforms.Resize(crop_size),
         transforms.ToTensor(),
     ])
 
 class Image_Dataset(Dataset):
-    def __init__(self, train_path , clip_len=16,action='train',frame_sample_rate=1, crop_size=112):
+    def __init__(self, train_path , clip_len=16,action='train',frame_sample_rate=1, size=112, crop_size=112):
         
-        root_dir = 'video'
+        root_dir = '../video'
         self.clip_len=clip_len
         file_s=[]
         label_s=[]
@@ -33,6 +33,7 @@ class Image_Dataset(Dataset):
         self.short_side = [128, 160]
         self.crop_size = crop_size
         self.frame_sample_rate = frame_sample_rate
+        self.size = size
         with open(train_path,'r') as f:
             datas = f.readlines()
             for data in datas:
@@ -62,7 +63,7 @@ class Image_Dataset(Dataset):
             img_path = os.path.join(self.file_list[index],imgs[img_index])
             img = Image.open(img_path)
             h, w = img.size
-            process = input_transform(min(h, w), self.crop_size)
+            process = input_transform(self.size)
             img = process(img)
             img = img.unsqueeze(1)
 
@@ -80,16 +81,18 @@ class Image_Dataset(Dataset):
 
         buffer = self.to_numpy(buffer)
 
-        buffer = self.random_erasing(buffer)
+
 
         
-        # if self.action == 'train':
-        #     buffer = self.randomflip(buffer) # 训练时随机翻转
+        if self.action == 'train':
+            buffer = self.randomflip(buffer) # 训练时随机翻转
+            buffer = self.random_erasing(buffer) #随即擦除
         buffer = self.crop(buffer, self.clip_len, self.crop_size) # 随机选择开始位置和图像中位置
         # buffer = self.normalize(buffer) # 归一化
         buffer = self.to_tensor(buffer) # [D,H,W,C] -> [C,D,H,W]符合 Pytorch格式
 
         label=self.label_list[index]
+
 
         return buffer,label
     def to_tensor(self, buffer):
@@ -218,10 +221,10 @@ class Test_Dataset(Dataset):
         with open(train_path, 'r') as f:
             datas = f.readlines()
             for data in datas:
-                # num = data.replace('\n', '')
-                num = data.split(':')[0]
-                label = data.split(':')[1].replace('\n', '')
-                label = label.replace(' ', '')
+                num = data.replace('\n', '')
+                # num = data.split(':')[0]
+                # label = data.split(':')[1].replace('\n', '')
+                # label = label.replace(' ', '')
                 path = root_dir + '/' + num
                 file_s.append(path)
                 # label_s.append(label)

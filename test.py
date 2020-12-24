@@ -55,7 +55,7 @@ def test(model, val_dataloader):
 
     with torch.no_grad():
         for step, (inputs, nums) in enumerate(val_dataloader):
-            index_path = 'name2label.txt'
+            index_path = '2train_name2label.txt'
             save_path = 'submission.txt'
             index = {}
             with open(index_path,'r') as f:
